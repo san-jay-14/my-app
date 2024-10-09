@@ -113,7 +113,7 @@ const styles = StyleSheet.create<Styles>({
     height: 56,
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
     paddingLeft: 20,
     paddingRight: 4,
   },
@@ -121,6 +121,7 @@ const styles = StyleSheet.create<Styles>({
     color: "#fff",
     fontSize: 18,
     fontWeight: "bold",
+    marginRight: 70,
   },
   sliderButton: {
     width: 48,
