@@ -22,10 +22,31 @@ export default function TopBar() {
         />
         <Text style={styles.title}>Pizza Hut</Text>
       </View>
-      <View>
-        <Text style={styles.savedText}>
-          You saved ₹79.97 with applied coupon
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 8,
+          paddingTop: 16,
+        }}
+      >
+        <Image
+          source={require("../../assets/images/nav-arrow.png")}
+          style={{ width: 20, height: 20 }}
+        />
+        <Text style={styles.savedText}>35 - 40 mins to clg |</Text>
+        <Text
+          style={{
+            fontSize: 12,
+          }}
+        >
+          Academic Block, Iiit Kotta...
         </Text>
+        <Image
+          source={require("../../assets/images/down.png")}
+          style={{ width: 20, height: 20 }}
+        />
       </View>
     </View>
   );
@@ -44,7 +65,7 @@ const styles = StyleSheet.create({
     fontWeight: "900",
   },
   savedText: {
-    fontSize: 14,
-    color: "#8c8c8c",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });

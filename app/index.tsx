@@ -34,7 +34,7 @@ const Home = () => {
             height={20}
           />
           <View style={styles.couponTextContainer}>
-            <Text style={styles.savedText}>79.97 saved!</Text>
+            <Text style={styles.savedText}>₹79.97 saved!</Text>
             <Text style={styles.couponDescriptionText}>
               With applied coupon
             </Text>
@@ -42,6 +42,36 @@ const Home = () => {
         </View>
 
         <CartItemsList />
+        <View style={styles.addItem}>
+          <Text>Add more items</Text>
+          <Image
+            source={require("../assets/images/plus.png")}
+            width={20}
+            height={20}
+          />
+        </View>
+        <View style={styles.addItem}>
+          <Text>Add more items</Text>
+          <Image
+            source={require("../assets/images/plus.png")}
+            width={10}
+            height={10}
+          />
+        </View>
+        <View style={styles.addItem}>
+          <Text
+            style={{
+              color: "gray",
+            }}
+          >
+            Add cooking requests
+          </Text>
+          <Image
+            source={require("../assets/images/plus.png")}
+            width={10}
+            height={10}
+          />
+        </View>
       </ScrollView>
 
       {/* Fixed bottom bar */}
@@ -65,7 +95,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 8,
     backgroundColor: "#ddfbef",
-    padding: 16,
+    padding: 12,
     width: "95%",
     borderRadius: 18,
     marginBottom: 24,
@@ -109,6 +139,16 @@ const styles = StyleSheet.create({
     padding: 16,
     borderTopWidth: 1,
     borderColor: "#ddd",
+  },
+  addItem: {
+    backgroundColor: "#fff",
+    padding: 12,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "95%",
+    alignItems: "center",
+    borderBottomColor: "#e6e6e6",
+    borderBottomWidth: 1,
   },
 });
 
