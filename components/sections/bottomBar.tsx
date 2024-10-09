@@ -76,6 +76,7 @@ const styles = StyleSheet.create<Styles>({
     right: 0,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
+    marginTop: 100,
   },
   header: {
     flexDirection: "row",

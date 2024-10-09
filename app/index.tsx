@@ -43,22 +43,20 @@ const Home = () => {
 
         <CartItemsList />
         <View style={styles.addItem}>
-          <Text>Add more items</Text>
+          <Text
+            style={{
+              color: "gray",
+            }}
+          >
+            Add more items
+          </Text>
           <Image
             source={require("../assets/images/plus.png")}
             width={20}
             height={20}
           />
         </View>
-        <View style={styles.addItem}>
-          <Text>Add more items</Text>
-          <Image
-            source={require("../assets/images/plus.png")}
-            width={10}
-            height={10}
-          />
-        </View>
-        <View style={styles.addItem}>
+        <View style={styles.cookReq}>
           <Text
             style={{
               color: "gray",
@@ -149,6 +147,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderBottomColor: "#e6e6e6",
     borderBottomWidth: 1,
+  },
+  cookReq: {
+    backgroundColor: "#fff",
+    padding: 12,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "95%",
+    alignItems: "center",
+    borderBottomColor: "#e6e6e6",
+    borderBottomWidth: 1,
+    borderBottomLeftRadius: 18,
+    borderBottomRightRadius: 18,
   },
 });
 
