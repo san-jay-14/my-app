@@ -103,9 +103,9 @@ const styles = StyleSheet.create<Styles>({
     fontWeight: "bold",
   },
   changeText: {
-    fontSize: 14,
-    color: "#FF9800",
-    fontWeight: "bold",
+    fontSize: 16,
+    color: "#e45712",
+    fontWeight: "900",
   },
   sliderContainer: {
     borderRadius: 30,
